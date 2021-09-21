@@ -1,0 +1,66 @@
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6 main-box">
+      <div class="clearfix mb-2">
+        <h3 class="float-left">
+          Add Product
+        </h3>
+        <div class="float-right">
+          <span style="cursor: pointer;">
+            <button class="btn btn-primary" (click)="open()" >Add Data</button>
+          </span>
+        </div>
+      </div>
+      <div class="clearfix">
+        <div class="card mb-1" *ngFor="let data of storeTask; let i=index"
+          [ngClass]="{'border-red': data.priority == 'High' , 'border-green': data.priority == 'Low' , 'border-orange': data.priority == 'Medium'}" (mouseenter)="show(i)" (mouseleave)="hide(i)">
+          <div class="card-body">
+            <div class="float-left">
+              <h5>{{data?.date | date:'dd/mm/yyyy'}}</h5>
+              <h3>{{data?.name}}</h3>
+            </div>
+            <div class="float-right" *ngIf="data.showBtn">
+              <button type="button" class="btn btn-info mr-1" (click)="editTask(data)">Edit</button>
+              <button type="button" class="btn btn-info" (click)="deleteTask(i)">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3"></div>
+  </div>
+  
+</div>
+<div class="container">
+    <h2 style="text-align: center; margin-top:1rem;">
+        <div class="d-inline p-2 bg-dark text-white">Product Details</div></h2>
+    <br />
+    
+      <!-- <a href="#adduser" class="btn btn-sm btn-success m-1" (click)="createUser(0)">Add User</a> -->
+      <div class="table-responsive">
+    <button class="btn btn-primary">Add Details</button>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">productId</th>
+            <th scope="col">productName</th>
+            <th scope="col">productSKU</th>
+            <th scope="col">productPrice</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let d of data">
+            <th scope="row">{{d.productId}}</th>
+            <td>{{d.productName}}</td>
+            <td>{{d.productSKU}}</td>
+            <td>{{d.productPrice}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+</div>
+
+  
+  

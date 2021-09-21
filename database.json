@@ -1,0 +1,101 @@
+{
+  "products": [
+    {
+      "productId": 1,
+      "productName": "Product001",
+      "productSKU": 1,
+      "productPrice": 10
+    },
+    {
+      "productId": 2,
+      "productName": "Product002",
+      "productSKU": 2,
+      "productPrice": 20
+      
+    },
+    {
+      "productId": 3,
+      "productName": "Product003",
+      "productSKU": 2,
+      "productPrice":30
+    },
+    {
+      "productId": 4,
+      "productName": "Product004",
+      "productSKU": 3,
+      "productPrice": 40
+      
+    },
+    {
+      "productId": 5,
+      "productName": "Product005",
+      "productSKU": 4,
+      "productPrice": 40
+      
+    },
+    {
+      "productId": 6,
+      "productName": "Product006",
+      "productSKU": 3,
+      "productPrice": 40
+      
+    },
+    {
+      "productId": 7,
+      "productName": "Product007",
+      "productSKU": 3,
+      "productPrice": 40
+      
+    },
+    {
+      "productId": 8,
+      "productName": "Product008",
+      "productSKU": 3,
+      "productPrice": 40
+      
+    },
+    {
+      "productId": 9,
+      "productName": "Product009",
+      "productSKU": 3,
+      "productPrice": 40
+      
+    },
+    {
+      "productId": 10,
+      "productName": "Product010",
+      "productSKU": 3,
+      "productPrice": 40
+      
+    },
+    {
+      "productId": 11,
+      "productName": "Product011",
+      "productSKU": 3,
+      "productPrice": 40
+      
+    },
+    {
+      "productId": 12,
+      "productName": "Product012",
+      "productSKU": 3,
+      "productPrice": 40
+      
+    },
+    {
+      "productId": 13,
+      "productName": "Product013",
+      "productSKU": 3,
+      "productPrice": 40
+      
+    },
+    {
+      "productId": 14,
+      "productName": "Product014",
+      "productSKU": 3,
+      "productPrice": 40
+      
+    }
+    
+  ]
+}
